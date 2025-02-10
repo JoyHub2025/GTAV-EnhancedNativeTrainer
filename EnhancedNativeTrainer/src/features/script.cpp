@@ -1,4 +1,4 @@
-/*
+﻿/*
 Some of this code began its life as a part of GTA V SCRIPT HOOK SDK.
 http://dev-c.com
 (C) Alexander Blade 2015
@@ -2246,7 +2246,7 @@ bool onconfirm_player_menu(MenuItem<int> choice){
 void process_player_menu(){
 	const int lineCount = 29;
 
-	const std::string caption = "Player Options";
+	const std::string caption = "玩家Player Options";
 
 	StandardOrToggleMenuDef lines[lineCount] = {
 		{"Player Appearance", NULL, NULL, false},
@@ -2364,7 +2364,7 @@ bool onconfirm_main_menu(MenuItem<int> choice){
 
 void process_main_menu(){
 	std::ostringstream captionSS;
-	captionSS << "~HUD_COLOUR_MENU_YELLOW~Enhanced ~HUD_COLOUR_WHITE~Native Trainer ~HUD_COLOUR_GREY~Update ";
+	captionSS << "~HUD_COLOUR_MENU_YELLOW~增强版 ~HUD_COLOUR_WHITE~Native Trainer ~HUD_COLOUR_GREY~Update ";
 	captionSS << VERSION_STRING;
 
 	std::vector<MenuItem<int>*> menuItems;
@@ -2373,13 +2373,13 @@ void process_main_menu(){
 	MenuItem<int> *item;
 
 	item = new MenuItem<int>();
-	item->caption = "Player";
+	item->caption = "玩家";
 	item->value = i++;
 	item->isLeaf = false;
 	menuItems.push_back(item);
 
 	item = new MenuItem<int>();
-	item->caption = "Locations";
+	item->caption = "地点";
 	item->value = i++;
 	item->isLeaf = false;
 	menuItems.push_back(item);

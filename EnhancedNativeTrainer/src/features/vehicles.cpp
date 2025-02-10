@@ -1,4 +1,4 @@
-/*
+﻿/*
 Some of this code began its life as a part of GTA V SCRIPT HOOK SDK.
 http://dev-c.com
 (C) Alexander Blade 2015
@@ -2277,7 +2277,7 @@ bool onconfirm_veh_menu(MenuItem<int> choice){
 }
 
 void process_veh_menu(){
-	const std::string caption = "Vehicle Options";
+	const std::string caption = "载具选项:！@Vehicle Options：";
 
 	std::vector<MenuItem<int>*> menuItems;
 	MenuItem<int> *item;

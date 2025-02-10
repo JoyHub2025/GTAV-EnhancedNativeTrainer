@@ -7,7 +7,7 @@ It is now part of the Enhanced Native Trainer project.
 https://github.com/gtav-ent/GTAV-EnhancedNativeTrainer
 (C) Rob Pridham and fellow contributors 2015
 */
-
+#pragma execution_character_set("utf-8")
 #pragma once
 
 #include "..\..\inc\natives.h"
