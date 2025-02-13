@@ -32,7 +32,7 @@ https://github.com/gtav-ent/GTAV-EnhancedNativeTrainer
 
 #pragma warning(disable : 4244 4305 4267) // double <-> float conversions <-> size_t conversions
 
-const int fontHeader = 4, fontItem = 0, fontWanted = 7;
+const int fontHeader = 4, fontItem = 0, fontWanted = 7;//设置菜单字体
 
 extern void(*periodic_feature_call)(void);
 
@@ -1237,7 +1237,7 @@ bool draw_generic_menu(MenuParameters<T> params) {
 		else {
 			if (bBack) {
 				menu_beep();
-				waitTime = 200;
+				waitTime = 2;//返回键按下后的等待时间
 				result = false;
 				break;
 			}
