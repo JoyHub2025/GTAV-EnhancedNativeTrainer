@@ -3098,19 +3098,15 @@ WCHAR* get_temp_dir_path(char* file){
 	return output;
 }
 
-WCHAR* get_storage_dir_path(){
-	PWSTR localAppData;
-	SHGetKnownFolderPath(FOLDERID_RoamingAppData, 0, NULL, &localAppData);
+WCHAR* get_storage_dir_path() {
+	WCHAR path[MAX_PATH];
+	GetModuleFileNameW(NULL, path, MAX_PATH);
+	PathRemoveFileSpecW(path);
 
 	WCHAR combined[MAX_PATH];
-	PathCombineW(combined, localAppData, L"GTAV Enhanced Native Trainer");
-
-	WCHAR *result = new WCHAR[MAX_PATH];
-
+	PathCombineW(combined, path, L"Enhanced Native Trainer");
+	WCHAR* result = new WCHAR[MAX_PATH];
 	wcsncpy(result, combined, MAX_PATH);
-
-	CoTaskMemFree(localAppData);
-
 	return result;
 }
 
