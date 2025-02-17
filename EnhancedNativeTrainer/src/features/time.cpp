@@ -1,4 +1,4 @@
-/*
+﻿/*
 Some of this code began its life as a part of GTA V SCRIPT HOOK SDK.
 http://dev-c.com
 (C) Alexander Blade 2015
@@ -335,14 +335,14 @@ bool onconfirm_time_menu(MenuItem<int> choice){
 }
 
 void process_time_menu(){
-	const std::string caption = "Time Options";
+	const std::string caption = "时间选项";
 
 	std::vector<MenuItem<int>*> menuItems;
 
 	int index = 0;
 
 	MenuItem<int> *item = new MenuItem<int>();
-	item->caption = "Set Time to Preset";
+	item->caption = "预设时间";
 	item->value = -1;
 	item->isLeaf = false;
 	menuItems.insert(menuItems.begin(), item);

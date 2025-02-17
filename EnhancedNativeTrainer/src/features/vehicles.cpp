@@ -2293,7 +2293,7 @@ void process_veh_menu(){
 	}
 
 	item = new MenuItem<int>();
-	item->caption = "Vehicle Spawner";
+	item->caption = "生成载具";
 	item->value = i++;
 	item->isLeaf = false;
 	menuItems.push_back(item);
